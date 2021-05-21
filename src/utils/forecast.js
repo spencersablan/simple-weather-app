@@ -11,9 +11,9 @@ const forecast = (latitude, longitude, callback) => {
        } else {
            
            const {current} = body
-           const {weather_descriptions,temperature,precip} = current
+           const {weather_descriptions,temperature,feelslike} = current
 
-           callback(undefined, `${weather_descriptions[0]}. It is currently ${temperature} degrees out.  There is a ${precip}% chance of rain.`)
+           callback(undefined, `${weather_descriptions[0]}. It is currently ${temperature} degrees out, but it feels like ${feelslike} degrees.  Have a great day`)
        }
    })
 }
