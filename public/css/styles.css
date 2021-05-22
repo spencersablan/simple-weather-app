@@ -38,13 +38,14 @@ header a {
 }
 
 .portrait {
-    width:250px;
-
+    width:100px;
+    border-radius: 50%;
 }
 
 input {
     border: 1px solid #cccccc;
-    padding:8px;
+    width: 250px;
+    padding: 8px;
 }
 
 button {
